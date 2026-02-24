@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Chart.js CDN (Latest Stable) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">DigitalPro</h2>
+        <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Analytics</a>
+            <a href="#">Campaigns</a>
+            <a href="#">Clients</a>
+            <a href="#">Settings</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+            <h1>Admin Dashboard</h1>
+            <div class="user">
+                <img src="https://i.pravatar.cc/40" alt="">
+                <span>Mansi</span>
+            </div>
+        </header>
+
+        <!-- Stats -->
+        <section class="stats">
+            <div class="card">
+                <h4>Total Revenue</h4>
+                <p>₹2,40,000</p>
+            </div>
+            <div class="card">
+                <h4>Active Campaigns</h4>
+                <p>18</p>
+            </div>
+            <div class="card">
+                <h4>New Leads</h4>
+                <p>320</p>
+            </div>
+            <div class="card">
+                <h4>Conversion Rate</h4>
+                <p>4.8%</p>
+            </div>
+        </section>
+
+        <!-- Charts -->
+        <section class="charts">
+            <div class="chart-box">
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <canvas id="barChart"></canvas>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
